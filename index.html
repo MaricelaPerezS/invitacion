@@ -12,16 +12,61 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="western-star" viewBox="0 0 100 100">
+        <polygon points="50,4 61,31 90,22 74,47 96,65 66,67 65,97 47,74 22,92 31,63 3,52 32,41 18,15 47,29" fill="currentColor" stroke="currentColor" stroke-width="2"/>
+        <circle cx="50" cy="50" r="19" fill="var(--paper)" stroke="currentColor" stroke-width="3"/>
+        <path d="M40 52c7-9 13-9 20 0M43 58c5 5 9 5 14 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="floral-spray" viewBox="0 0 260 180">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 165C72 128 108 83 137 12" stroke-width="3"/>
+          <path d="M45 148C47 117 31 100 18 88M67 130C83 109 87 89 84 67M95 101C112 85 118 65 118 42M116 73C136 66 149 50 157 33" stroke-width="2"/>
+          <path d="M45 148c-20 1-33-8-39-19 18-4 31 1 39 19ZM67 130c-3-18 4-31 17-39 6 16 1 30-17 39ZM95 101c-17-2-28-11-31-24 17-2 28 6 31 24ZM116 73c-5-16-1-29 11-39 8 15 4 28-11 39ZM137 48c11-15 25-20 40-15-7 16-20 21-40 15Z" stroke-width="2"/>
+        </g>
+        <g fill="var(--rose-soft, #d7a59e)" stroke="currentColor" stroke-width="2">
+          <circle cx="22" cy="84" r="12"/><circle cx="81" cy="63" r="11"/><circle cx="158" cy="29" r="10"/>
+          <g transform="translate(30 118)"><circle r="15"/><circle cx="-9" cy="-4" r="8"/><circle cx="9" cy="-4" r="8"/><circle cx="0" cy="8" r="8"/><circle r="4" fill="var(--gold)"/></g>
+          <g transform="translate(121 45)"><circle r="13"/><circle cx="-8" cy="-3" r="7"/><circle cx="8" cy="-3" r="7"/><circle cx="0" cy="7" r="7"/><circle r="3.5" fill="var(--gold)"/></g>
+        </g>
+      </symbol>
+      <symbol id="rose-cluster" viewBox="0 0 260 180">
+        <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+          <path d="M18 166C64 130 91 102 117 52M53 153C84 145 112 124 131 91M126 153C153 127 169 100 177 55M165 148C191 131 215 105 235 74"/>
+          <path d="M51 151c-20 0-33-7-41-21 20-3 34 4 41 21ZM82 130c-10-17-9-32 2-44 13 13 12 28-2 44ZM139 134c-3-20 4-34 20-42 5 18-2 32-20 42ZM183 117c8-18 21-27 38-24-5 18-18 27-38 24ZM205 94c2-18 12-30 29-35 1 18-9 30-29 35Z"/>
+        </g>
+        <g stroke="currentColor" stroke-width="2">
+          <g transform="translate(114 54)" fill="var(--rose)"><circle r="28"/><path d="M-15 2c8-18 29-18 31 0 1 12-11 20-17 10-6-10 5-18 13-12" fill="none" stroke="var(--paper)" stroke-width="3"/></g>
+          <g transform="translate(173 55)" fill="var(--rose-soft, #d7a59e)"><circle r="21"/><path d="M-11 1c7-13 21-13 23 0 1 9-8 14-13 7-4-7 4-12 10-8" fill="none" stroke="var(--paper)" stroke-width="2.5"/></g>
+          <g transform="translate(72 96)" fill="#d8b49c"><circle r="17"/><circle r="5" fill="var(--gold)"/></g>
+          <g transform="translate(145 108)" fill="#ead5bc"><circle r="15"/><circle r="4" fill="var(--gold)"/></g>
+          <g transform="translate(218 91)" fill="#ead5bc"><circle r="13"/><circle r="4" fill="var(--gold)"/></g>
+        </g>
+      </symbol>
+      <symbol id="scroll-flourish" viewBox="0 0 240 58">
+        <path d="M5 33c28 0 24-24 48-24 17 0 13 25-4 20-10-3-8-14 1-16M55 32c24 0 27 17 50 17 15 0 23-7 28-17 5 10 13 17 28 17 23 0 26-17 50-17M235 33c-28 0-24-24-48-24-17 0-13 25 4 20 10-3 8-14-1-16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="120" cy="30" r="4" fill="currentColor"/>
+      </symbol>
+      <symbol id="cowboy-hat" viewBox="0 0 220 120">
+        <path d="M54 72c12-9 19-29 26-51 22 16 41 16 61 0 7 23 16 42 29 52-36 13-81 13-116-1Z" fill="var(--cream-2)" stroke="currentColor" stroke-width="4"/>
+        <path d="M72 64c27 10 53 10 78 0" fill="none" stroke="currentColor" stroke-width="5"/>
+        <path d="M13 77c34 11 57 9 92 2 39-8 69-9 102 1-18 25-56 32-102 25C60 112 27 104 13 77Z" fill="#d4b17a" stroke="currentColor" stroke-width="4"/>
+      </symbol>
+    </defs>
+  </svg>
+
   <div class="paper-noise" aria-hidden="true"></div>
 
   <div id="intro" class="intro">
     <div class="intro-poster ornamental-frame">
       <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
       <div class="corner corner-bl"></div><div class="corner corner-br"></div>
-      <div class="sheriff-star" aria-hidden="true">✦</div>
+      <svg class="intro-star" viewBox="0 0 100 100" aria-hidden="true"><use href="#western-star"/></svg>
+      <svg class="intro-bouquet" viewBox="0 0 260 180" aria-hidden="true"><use href="#rose-cluster"/></svg>
       <p class="kicker">Una invitación especial</p>
       <h1>Para ti</h1>
-      <div class="flourish">❦</div>
+      <svg class="ornament-line" viewBox="0 0 240 58" aria-hidden="true"><use href="#scroll-flourish"/></svg>
       <p>La pequeña vaquerita <strong>Sofía</strong> está por celebrar.</p>
       <button id="openInvite" class="btn btn-primary">Abrir invitación</button>
       <p class="microcopy">Toca para entrar · la música comenzará después de tu toque</p>
@@ -39,6 +84,8 @@
       <div class="corner corner-bl"></div><div class="corner corner-br"></div>
       <div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✦</div>
       <div class="sparkle sparkle-c">✧</div><div class="sparkle sparkle-d">✧</div>
+      <svg class="poster-spray poster-spray-left" viewBox="0 0 260 180" aria-hidden="true"><use href="#floral-spray"/></svg>
+      <svg class="poster-spray poster-spray-right" viewBox="0 0 260 180" aria-hidden="true"><use href="#floral-spray"/></svg>
 
       <div class="badge-star" aria-hidden="true"><span>✦</span></div>
       <p class="kicker">Aparta la fecha</p>
@@ -49,14 +96,12 @@
         <span class="age-label">años</span>
       </div>
 
-      <div class="hero-cameo" aria-label="Decoración western">
+      <div class="hero-cameo" aria-label="Decoración western floral">
         <div class="cameo-arch"></div>
-        <div class="horseshoe">⌒</div>
-        <div class="boot boot-left">♢</div>
-        <div class="boot boot-right">♢</div>
-        <div class="wildflowers flowers-left">❀ ❁ ✿</div>
-        <div class="wildflowers flowers-right">✿ ❁ ❀</div>
-        <div class="hat">⌢</div>
+        <svg class="hero-floral hero-floral-left" viewBox="0 0 260 180" aria-hidden="true"><use href="#rose-cluster"/></svg>
+        <svg class="hero-floral hero-floral-right" viewBox="0 0 260 180" aria-hidden="true"><use href="#rose-cluster"/></svg>
+        <svg class="hero-hat" viewBox="0 0 220 120" aria-hidden="true"><use href="#cowboy-hat"/></svg>
+        <svg class="hero-badge" viewBox="0 0 100 100" aria-hidden="true"><use href="#western-star"/></svg>
       </div>
 
       <div class="date-strip">
@@ -80,7 +125,7 @@
         <span class="mini-star">✦</span>
         <p class="kicker">Ya casi llega el día</p>
         <h2>Cuenta regresiva</h2>
-        <div class="flourish">❦</div>
+        <svg class="ornament-line" viewBox="0 0 240 58" aria-hidden="true"><use href="#scroll-flourish"/></svg>
       </div>
       <div class="countdown-grid">
         <div><strong id="days">00</strong><span>Días</span></div>
@@ -91,11 +136,11 @@
     </section>
 
     <section id="detalles" class="section reveal">
-      <div class="vintage-card ornamental-frame soft">
+      <div class="vintage-card ornamental-frame soft botanical-card"><svg class="card-flower card-flower-left" viewBox="0 0 260 180" aria-hidden="true"><use href="#floral-spray"/></svg><svg class="card-flower card-flower-right" viewBox="0 0 260 180" aria-hidden="true"><use href="#floral-spray"/></svg>
         <div class="section-heading">
           <p class="kicker">Detalles del festejo</p>
           <h2>La celebración</h2>
-          <div class="flourish">❦</div>
+          <svg class="ornament-line" viewBox="0 0 240 58" aria-hidden="true"><use href="#scroll-flourish"/></svg>
         </div>
         <div class="detail-grid">
           <article><div class="detail-icon">✦</div><h3>Fecha</h3><p>Sábado 14 de noviembre de 2026</p></article>
@@ -107,7 +152,7 @@
     </section>
 
     <section class="section reveal">
-      <div class="section-heading"><p class="kicker">Una tarde para recordar</p><h2>Habrá un poquito de todo</h2><div class="flourish">❦</div></div>
+      <div class="section-heading"><p class="kicker">Una tarde para recordar</p><h2>Habrá un poquito de todo</h2><svg class="ornament-line" viewBox="0 0 240 58" aria-hidden="true"><use href="#scroll-flourish"/></svg></div>
       <div class="chips">
         <span>Pastel</span><span>Piñata</span><span>Música</span><span>Comida</span><span>Juegos</span><span>Fotos</span>
       </div>
@@ -115,7 +160,7 @@
     </section>
 
     <section id="ubicacion" class="section reveal">
-      <div class="section-heading"><p class="kicker">Sigue el camino</p><h2>Cómo llegar</h2><div class="flourish">❦</div></div>
+      <div class="section-heading"><p class="kicker">Sigue el camino</p><h2>Cómo llegar</h2><svg class="ornament-line" viewBox="0 0 240 58" aria-hidden="true"><use href="#scroll-flourish"/></svg></div>
       <div class="map-frame ornamental-frame soft">
         <iframe title="Mapa del evento" src="https://www.google.com/maps?q=Monumento+a+la+Revoluci%C3%B3n+CDMX&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -123,8 +168,8 @@
     </section>
 
     <section class="section reveal">
-      <div class="vintage-card ornamental-frame soft rsvp-card">
-        <div class="section-heading"><p class="kicker">Ayúdanos a preparar todo</p><h2>Confirma tu asistencia</h2><div class="flourish">❦</div></div>
+      <div class="vintage-card ornamental-frame soft rsvp-card botanical-card"><svg class="card-flower card-flower-left" viewBox="0 0 260 180" aria-hidden="true"><use href="#rose-cluster"/></svg><svg class="card-flower card-flower-right" viewBox="0 0 260 180" aria-hidden="true"><use href="#rose-cluster"/></svg>
+        <div class="section-heading"><p class="kicker">Ayúdanos a preparar todo</p><h2>Confirma tu asistencia</h2><svg class="ornament-line" viewBox="0 0 240 58" aria-hidden="true"><use href="#scroll-flourish"/></svg></div>
         <p class="body-copy">Puedes confirmar por WhatsApp o registrar tu respuesta en el formulario. Si conectas Google Forms con Sheets, tu lista de invitados se actualizará automáticamente.</p>
         <div class="button-stack">
           <a id="whatsappBtn" class="btn btn-primary" target="_blank" rel="noopener" href="#">Confirmar por WhatsApp</a>
@@ -135,7 +180,7 @@
     </section>
 
     <section class="section reveal">
-      <div class="section-heading"><p class="kicker">Tu presencia es nuestro mejor regalo</p><h2>Mesa de regalos</h2><div class="flourish">❦</div></div>
+      <div class="section-heading"><p class="kicker">Tu presencia es nuestro mejor regalo</p><h2>Mesa de regalos</h2><svg class="ornament-line" viewBox="0 0 240 58" aria-hidden="true"><use href="#scroll-flourish"/></svg></div>
       <p class="body-copy">Si deseas llevarle un detallito a Sofía, puedes dejar aquí las opciones que prefieras.</p>
       <div class="gift-grid">
         <a href="https://www.amazon.com.mx/" target="_blank" rel="noopener"><span>✦</span> Amazon</a>
@@ -145,7 +190,7 @@
     </section>
 
     <section class="section gallery reveal">
-      <div class="section-heading"><p class="kicker">Nuestra pequeña vaquerita</p><h2>Momentos bonitos</h2><div class="flourish">❦</div></div>
+      <div class="section-heading"><p class="kicker">Nuestra pequeña vaquerita</p><h2>Momentos bonitos</h2><svg class="ornament-line" viewBox="0 0 240 58" aria-hidden="true"><use href="#scroll-flourish"/></svg></div>
       <div class="polaroids">
         <figure><div class="photo-placeholder"><span>Foto 1</span></div><figcaption>Mi vaquerita</figcaption></figure>
         <figure><div class="photo-placeholder"><span>Foto 2</span></div><figcaption>Yeehaw</figcaption></figure>
@@ -155,12 +200,12 @@
     </section>
 
     <section class="section final-section reveal">
-      <div class="final-poster ornamental-frame soft">
+      <div class="final-poster ornamental-frame soft botanical-card"><svg class="final-flower" viewBox="0 0 260 180" aria-hidden="true"><use href="#rose-cluster"/></svg>
         <div class="badge-star"><span>✦</span></div>
         <p class="kicker">Nos vemos en el rodeo</p>
         <h2>¡Te esperamos!</h2>
         <p>Ensilla tu caballo, ponte tus botas y acompáñanos a celebrar un día muy especial.</p>
-        <div class="flourish">❦</div>
+        <svg class="ornament-line" viewBox="0 0 240 58" aria-hidden="true"><use href="#scroll-flourish"/></svg>
         <p class="signature">Con cariño, Sofía y familia</p>
       </div>
     </section>

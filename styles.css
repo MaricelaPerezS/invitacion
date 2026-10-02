@@ -33,3 +33,45 @@ a{color:inherit}.paper-noise{position:fixed;inset:0;pointer-events:none;z-index:
 .polaroids{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:760px;margin:28px auto}.polaroids figure{margin:0;background:#f9eedb;padding:10px 10px 18px;border:1px solid rgba(183,138,67,.42);box-shadow:0 10px 30px var(--shadow)}.polaroids figure:nth-child(1){transform:rotate(-2.5deg)}.polaroids figure:nth-child(2){transform:translateY(8px) rotate(1.2deg)}.polaroids figure:nth-child(3){transform:rotate(2.4deg)}.photo-placeholder{aspect-ratio:4/5;background:linear-gradient(135deg,#ead0b7,#d9a49f 52%,#c9a16f);display:grid;place-items:center;border:1px solid rgba(102,70,43,.14)}.photo-placeholder span{font:italic 1.3rem/1 "Cormorant Garamond",serif;color:#fff7e8;text-shadow:0 1px 5px rgba(71,47,29,.25)}.polaroids figcaption{font:italic 1.2rem/1 "Cormorant Garamond",serif;color:var(--brown);padding-top:12px}.gallery code{background:rgba(183,138,67,.08);padding:2px 5px}.final-poster{padding:58px 30px}.final-poster h2{font:600 clamp(3rem,12vw,5rem)/.9 "Cormorant Garamond",serif;color:var(--rose);margin:6px 0 16px}.signature{font:italic 1.15rem/1.2 "Cormorant Garamond",serif;color:var(--brown-soft)}footer{text-align:center;padding:10px 20px 38px;font-size:.72rem;letter-spacing:.12em;color:var(--brown-soft)}
 @media (max-width:650px){.section{width:min(calc(100% - 18px),var(--max));padding:46px 0}.poster{padding:50px 24px 34px;min-height:calc(100svh - 18px)}.poster::after{inset:15px}.name{font-size:clamp(3.6rem,20vw,5.6rem)}.hero-cameo{height:160px}.cameo-arch{width:180px;height:150px}.horseshoe{font-size:6.5rem;top:38px}.hat{font-size:5rem;top:90px}.wildflowers{font-size:1rem}.boot{font-size:2.4rem}.date-strip{gap:9px}.detail-grid{grid-template-columns:1fr}.countdown-grid{gap:6px}.countdown-grid div{padding:16px 4px 13px}.gift-grid,.polaroids{grid-template-columns:1fr}.polaroids{max-width:340px}.polaroids figure:nth-child(n){transform:none}.map-frame iframe{height:320px}.vintage-card{padding:48px 20px}.intro-poster{padding:64px 28px 48px}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* --- Floral western detailing inspired by antique rodeo stationery --- */
+:root{--rose-soft:#d8aaa2;--sage:#8d8b69;--blush:#e4c0b1}
+.svg-sprite{position:absolute;width:0;height:0;overflow:hidden}
+.ornament-line{display:block;width:min(220px,60vw);height:auto;margin:3px auto 13px;color:var(--gold);overflow:visible}
+.intro-star{width:62px;height:62px;color:var(--gold-dark);filter:drop-shadow(0 2px 2px rgba(92,62,29,.18));position:relative;z-index:2}
+.intro-bouquet{width:180px;height:116px;color:var(--brown-soft);margin:-12px auto -8px;opacity:.9}
+.poster-spray{position:absolute;width:210px;height:auto;color:var(--sage);z-index:0;opacity:.7;pointer-events:none}
+.poster-spray-left{left:-48px;bottom:20%;transform:rotate(-17deg)}
+.poster-spray-right{right:-48px;bottom:20%;transform:scaleX(-1) rotate(-17deg)}
+.poster>.kicker,.poster>.name,.poster>.age-wrap,.poster>.hero-cameo,.poster>.date-strip,.poster>.time-line,.poster>.venue,.poster>.btn,.poster>.dress-title,.poster>.dress-code,.poster>.quote,.poster>.scroll-hint,.poster>.badge-star{position:relative;z-index:3}
+.badge-star{position:relative}
+.hero-cameo{height:245px;width:min(100%,560px);margin:0 auto 5px;isolation:isolate}
+.cameo-arch{width:245px;height:212px;border-width:1.5px;background:radial-gradient(circle at 50% 75%,rgba(183,138,67,.12),transparent 62%)}
+.hero-floral{position:absolute;bottom:0;width:205px;height:auto;color:var(--brown-soft);z-index:3;filter:drop-shadow(0 3px 3px rgba(80,54,34,.09))}
+.hero-floral-left{left:-4px;transform:rotate(-5deg)}
+.hero-floral-right{right:-4px;transform:scaleX(-1) rotate(-5deg)}
+.hero-hat{position:absolute;width:145px;height:auto;left:50%;bottom:17px;transform:translateX(-50%) rotate(-3deg);color:var(--brown-soft);z-index:4;filter:drop-shadow(0 5px 4px rgba(80,54,34,.13))}
+.hero-badge{position:absolute;width:58px;height:58px;left:50%;top:14px;transform:translateX(-50%);color:var(--gold-dark);z-index:4;filter:drop-shadow(0 2px 2px rgba(80,54,34,.14))}
+.botanical-card{overflow:hidden;isolation:isolate}
+.botanical-card>*:not(.card-flower):not(.final-flower){position:relative;z-index:2}
+.card-flower{position:absolute;width:170px;height:auto;color:var(--sage);opacity:.33;z-index:0;pointer-events:none}
+.card-flower-left{left:-46px;bottom:-25px;transform:rotate(-11deg)}
+.card-flower-right{right:-46px;top:-28px;transform:scaleX(-1) rotate(-11deg)}
+.final-flower{position:absolute;width:230px;height:auto;left:50%;bottom:-82px;transform:translateX(-50%);color:var(--brown-soft);opacity:.22;z-index:0}
+.section-heading{position:relative}
+.section-heading::before,.section-heading::after{content:"✦";display:inline-block;color:var(--gold);font-size:.58rem;vertical-align:middle;margin:0 12px;opacity:.8}
+.detail-grid article{position:relative;background:linear-gradient(180deg,rgba(255,250,239,.26),rgba(239,217,187,.18))}
+.detail-grid article::before{content:"";position:absolute;inset:5px;border:1px solid rgba(183,138,67,.18);pointer-events:none}
+.gift-grid a{position:relative;overflow:hidden}
+.gift-grid a::after{content:"❦";position:absolute;right:-7px;bottom:-12px;font:2.8rem/1 "Cormorant Garamond",serif;color:rgba(185,119,112,.13);transform:rotate(-17deg)}
+.polaroids figure{position:relative}
+.polaroids figure::before{content:"✦";position:absolute;top:-13px;left:50%;transform:translateX(-50%);color:var(--gold);font-size:1.1rem;text-shadow:0 1px 0 var(--paper)}
+.map-frame::after{content:"✦  ruta al rodeo  ✦";position:absolute;left:50%;bottom:4px;transform:translateX(-50%);background:var(--paper);padding:2px 12px;font:600 .62rem/1.2 "Montserrat",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);white-space:nowrap}
+.btn-secondary,.btn-outline{position:relative}
+.btn-secondary::before,.btn-secondary::after,.btn-outline::before,.btn-outline::after{content:"✦";font-size:.55rem;color:var(--gold);opacity:.9}
+
+@media (max-width:650px){
+  .poster-spray{width:150px;opacity:.52}.poster-spray-left{left:-52px}.poster-spray-right{right:-52px}
+  .hero-cameo{height:205px}.cameo-arch{width:200px;height:175px}.hero-floral{width:160px}.hero-hat{width:118px;bottom:14px}.hero-badge{width:48px;height:48px;top:8px}
+  .card-flower{width:135px;opacity:.24}.intro-bouquet{width:155px}.section-heading::before,.section-heading::after{margin:0 6px}
+}

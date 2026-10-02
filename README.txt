@@ -53,3 +53,6 @@ Dorado antiguo: #b78a43
 Café: #5d402b
 
 Esta versión está inspirada en una estética western vintage floral: papel envejecido, rosa empolvado, oro antiguo, marcos ornamentales y tipografía serif elegante.
+
+VERSIÓN FLORAL VINTAGE:
+Esta revisión añade rosas, flores silvestres, follaje, estrellas sheriff, ornamentos y detalles tipo papelería western antigua hechos con SVG/CSS. No necesitas imágenes externas para estos adornos.
