@@ -1,42 +1,55 @@
-INVITACIÓN VAQUERITA - ARCHIVOS
+INVITACIÓN WESTERN VINTAGE — GUÍA RÁPIDA
 
-1. index.html  -> contenido principal
-2. styles.css  -> diseño y animaciones
-3. script.js   -> música, WhatsApp y cuenta regresiva
-4. assets/     -> aquí van musica.mp3 y tus fotos
+ARCHIVOS
+- index.html: textos, mapa, links y contenido.
+- styles.css: colores, marcos, tipografías y animaciones.
+- script.js: fecha de cuenta regresiva y WhatsApp.
+- assets/: música y fotos.
 
-CAMBIOS IMPORTANTES:
-- En index.html cambia nombre, fecha, hora, dirección, mapa, mesas de regalos y texto.
-- En script.js cambia eventDate y whatsappNumber.
-- Guarda tu canción como assets/musica.mp3.
-- Para fotos, puedes reemplazar los placeholders por <img src="assets/foto1.jpg" alt="...">.
+1) DATOS DEL EVENTO
+Abre index.html y reemplaza los datos de ejemplo: nombre, edad, fecha, hora, lugar, dirección, dress code, fecha límite de confirmación y textos.
 
-MAPA:
-1. Busca el lugar en Google Maps.
-2. Compartir > Insertar un mapa > Copiar HTML.
-3. Copia solamente el valor src="..." y reemplázalo en el iframe de index.html.
-4. Para el botón "Abrir en Google Maps", pega el enlace de Google Maps en el href.
+2) CUENTA REGRESIVA + WHATSAPP
+Abre script.js y cambia:
+eventDate: "2026-11-14T16:00:00-06:00"
+whatsappNumber: "52XXXXXXXXXX"
+birthdayGirl: "Sofía"
+age: 3
 
-GOOGLE FORMS / SHEETS:
-1. Crea un formulario en forms.google.com.
-2. Preguntas sugeridas: Familia, adultos, niños, nombres y comentarios.
-3. En Respuestas > Vincular con Hojas de cálculo.
-4. Pulsa Enviar > enlace y copia la URL.
-5. Reemplaza https://forms.google.com/ en el botón "Registrar asistencia".
+3) MÚSICA
+Pon tu audio dentro de assets con el nombre exacto:
+assets/musica.mp3
+El navegador exige que el usuario toque primero la pantalla, por eso la música comienza al pulsar “Abrir invitación”.
 
-GITHUB PAGES:
-1. Crea una cuenta en github.com si no tienes.
-2. New repository.
-3. Nombre recomendado: invitacion-sofia.
-4. Public.
-5. Create repository.
-6. Add file > Upload files.
-7. Sube index.html, styles.css, script.js y la carpeta assets.
-8. Commit changes.
-9. Settings > Pages.
-10. Build and deployment > Source: Deploy from a branch.
-11. Branch: main, folder /(root), Save.
-12. GitHub mostrará la URL publicada.
+4) MAPA
+En Google Maps busca el lugar > Compartir > Insertar un mapa > copia la URL de src="..." del iframe.
+En index.html reemplaza el src del iframe.
+También reemplaza el href del botón “Abrir en Google Maps” por el link compartido del lugar.
 
-IMPORTANTE SOBRE MÚSICA:
-Los navegadores normalmente bloquean música con sonido antes de una interacción del usuario. Por eso esta invitación inicia la música después de tocar "Toca para abrir la invitación".
+5) RSVP EN GOOGLE FORMS + SHEETS
+Crea un Google Form con Nombre/Familia, Asistirá, Adultos, Niños y Comentarios.
+En Respuestas > Vincular con Hojas de cálculo crea la Sheet.
+Luego reemplaza https://forms.google.com/ en index.html por tu enlace real.
+
+6) FOTOS
+Guarda tus fotos en assets como foto1.jpg, foto2.jpg y foto3.jpg.
+Para mostrarlas, reemplaza por ejemplo:
+<div class="photo-placeholder"><span>Foto 1</span></div>
+por:
+<img class="photo-placeholder" src="assets/foto1.jpg" alt="Sofía">
+
+7) GITHUB PAGES
+- Crea un repositorio público en GitHub.
+- Sube index.html, styles.css, script.js y la carpeta assets.
+- Settings > Pages > Deploy from a branch.
+- Branch main / (root) > Save.
+- Espera unos minutos y GitHub te dará una URL tipo:
+  https://tuusuario.github.io/nombre-del-repo/
+
+PALETA PRINCIPAL
+Crema: #f5e8d0
+Rosa empolvado: #b97770
+Dorado antiguo: #b78a43
+Café: #5d402b
+
+Esta versión está inspirada en una estética western vintage floral: papel envejecido, rosa empolvado, oro antiguo, marcos ornamentales y tipografía serif elegante.

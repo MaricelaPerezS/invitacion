@@ -3,56 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#b96f73" />
-  <meta name="description" content="Invitación de cumpleaños estilo vaquerita" />
-  <title>Fiesta Vaquerita de Sofía</title>
+  <meta name="theme-color" content="#c48d83" />
+  <meta name="description" content="Invitación de cumpleaños estilo western vintage floral" />
+  <title>Fiesta Western de Sofía</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Libre+Caslon+Display&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="paper-noise" aria-hidden="true"></div>
+
   <div id="intro" class="intro">
-    <div class="intro-card">
-      <div class="intro-star">★</div>
-      <p class="eyebrow">Una invitación especial para ti</p>
-      <h1>¡Yeehaw! 🤠🌸</h1>
-      <p>La vaquerita <strong>Sofía</strong> está de fiesta.</p>
-      <button id="openInvite" class="btn btn-primary">Toca para abrir la invitación</button>
-      <p class="microcopy">Al tocar, comenzará la música.</p>
+    <div class="intro-poster ornamental-frame">
+      <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div><div class="corner corner-br"></div>
+      <div class="sheriff-star" aria-hidden="true">✦</div>
+      <p class="kicker">Una invitación especial</p>
+      <h1>Para ti</h1>
+      <div class="flourish">❦</div>
+      <p>La pequeña vaquerita <strong>Sofía</strong> está por celebrar.</p>
+      <button id="openInvite" class="btn btn-primary">Abrir invitación</button>
+      <p class="microcopy">Toca para entrar · la música comenzará después de tu toque</p>
     </div>
   </div>
 
   <audio id="bgMusic" loop preload="auto">
     <source src="assets/musica.mp3" type="audio/mpeg" />
   </audio>
-
-  <button id="musicToggle" class="music-toggle" aria-label="Activar o desactivar música">🔊</button>
+  <button id="musicToggle" class="music-toggle" aria-label="Activar o desactivar música" title="Música">♪</button>
 
   <header class="hero section reveal">
-    <div class="floating-star star-1">★</div>
-    <div class="floating-star star-2">★</div>
-    <div class="floating-flower flower-1">✿</div>
-    <div class="floating-flower flower-2">✿</div>
+    <div class="poster ornamental-frame">
+      <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div><div class="corner corner-br"></div>
+      <div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✦</div>
+      <div class="sparkle sparkle-c">✧</div><div class="sparkle sparkle-d">✧</div>
 
-    <div class="hero-badge">Wanted: invitados con ganas de celebrar</div>
-    <p class="eyebrow">Aparta la fecha</p>
-    <h1>Sofía cumple <span>3</span></h1>
-    <p class="subtitle">Una tarde de botas, sombreros y mucha diversión.</p>
+      <div class="badge-star" aria-hidden="true"><span>✦</span></div>
+      <p class="kicker">Aparta la fecha</p>
+      <h1 class="name">SOFÍA</h1>
+      <div class="age-wrap">
+        <span class="age-label">cumple</span>
+        <strong>3</strong>
+        <span class="age-label">años</span>
+      </div>
 
-    <div class="date-card">
-      <div><strong>Sábado</strong><span>14</span><small>Noviembre</small></div>
-      <div class="date-divider"></div>
-      <div><strong>2026</strong><span>4:00</span><small>PM</small></div>
+      <div class="hero-cameo" aria-label="Decoración western">
+        <div class="cameo-arch"></div>
+        <div class="horseshoe">⌒</div>
+        <div class="boot boot-left">♢</div>
+        <div class="boot boot-right">♢</div>
+        <div class="wildflowers flowers-left">❀ ❁ ✿</div>
+        <div class="wildflowers flowers-right">✿ ❁ ❀</div>
+        <div class="hat">⌢</div>
+      </div>
+
+      <div class="date-strip">
+        <div><span>SÁBADO</span></div>
+        <div class="day-number">14</div>
+        <div><span>NOVIEMBRE</span></div>
+      </div>
+      <div class="time-line"><span>✦</span> 4:00 PM <span>✦</span></div>
+      <p class="venue">SALÓN RANCHO BONITO</p>
+      <a class="btn btn-secondary compact" href="#ubicacion">⌖ CÓMO LLEGAR</a>
+      <p class="dress-title">CÓDIGO DE VESTIMENTA</p>
+      <p class="dress-code">BOTAS Y SOMBRERO</p>
+      <p class="quote">“Un día bonito se vuelve inolvidable cuando lo compartimos con quienes queremos.”</p>
+      <a href="#detalles" class="scroll-hint">Desliza para continuar ↓</a>
     </div>
-
-    <a href="#detalles" class="scroll-hint">Desliza para ver la invitación ↓</a>
   </header>
 
   <main>
     <section id="countdown" class="section reveal">
-      <p class="eyebrow">Falta muy poquito</p>
-      <h2>Cuenta regresiva</h2>
+      <div class="section-heading">
+        <span class="mini-star">✦</span>
+        <p class="kicker">Ya casi llega el día</p>
+        <h2>Cuenta regresiva</h2>
+        <div class="flourish">❦</div>
+      </div>
       <div class="countdown-grid">
         <div><strong id="days">00</strong><span>Días</span></div>
         <div><strong id="hours">00</strong><span>Horas</span></div>
@@ -61,107 +90,83 @@
       </div>
     </section>
 
-    <section id="detalles" class="section paper-card reveal">
-      <p class="eyebrow">Detalles del rodeo</p>
-      <h2>La fiesta</h2>
-      <div class="detail-grid">
-        <article>
-          <div class="icon">📅</div>
-          <h3>Fecha</h3>
-          <p>Sábado 14 de noviembre de 2026</p>
-        </article>
-        <article>
-          <div class="icon">🕓</div>
-          <h3>Hora</h3>
-          <p>4:00 PM</p>
-        </article>
-        <article>
-          <div class="icon">📍</div>
-          <h3>Lugar</h3>
-          <p>Salón Rancho Bonito<br>Av. Ejemplo 123, CDMX</p>
-        </article>
-        <article>
-          <div class="icon">👢</div>
-          <h3>Dress code</h3>
-          <p>Western casual. Sombrero opcional, actitud vaquera obligatoria.</p>
-        </article>
+    <section id="detalles" class="section reveal">
+      <div class="vintage-card ornamental-frame soft">
+        <div class="section-heading">
+          <p class="kicker">Detalles del festejo</p>
+          <h2>La celebración</h2>
+          <div class="flourish">❦</div>
+        </div>
+        <div class="detail-grid">
+          <article><div class="detail-icon">✦</div><h3>Fecha</h3><p>Sábado 14 de noviembre de 2026</p></article>
+          <article><div class="detail-icon">◷</div><h3>Hora</h3><p>4:00 PM</p></article>
+          <article><div class="detail-icon">⌖</div><h3>Lugar</h3><p>Salón Rancho Bonito<br>Av. Ejemplo 123, CDMX</p></article>
+          <article><div class="detail-icon">♢</div><h3>Dress code</h3><p>Western casual<br>Botas y sombrero</p></article>
+        </div>
       </div>
     </section>
 
     <section class="section reveal">
-      <p class="eyebrow">No te pierdas</p>
-      <h2>Lo que tendremos</h2>
+      <div class="section-heading"><p class="kicker">Una tarde para recordar</p><h2>Habrá un poquito de todo</h2><div class="flourish">❦</div></div>
       <div class="chips">
-        <span>🎂 Pastel</span>
-        <span>🪅 Piñata</span>
-        <span>🎶 Música</span>
-        <span>🌮 Comida</span>
-        <span>🎲 Juegos</span>
-        <span>📸 Fotos</span>
+        <span>Pastel</span><span>Piñata</span><span>Música</span><span>Comida</span><span>Juegos</span><span>Fotos</span>
       </div>
-      <p class="body-copy">Prepara tus botas porque queremos pasar una tarde muy especial contigo. Si deseas agregar información como alberca, estacionamiento o recomendaciones para niños, este es el lugar ideal.</p>
+      <p class="body-copy">Prepara tus botas para una tarde muy especial. Aquí puedes añadir cualquier aviso importante: alberca, estacionamiento, recomendaciones para niñas y niños, horario de piñata o cualquier detalle que quieras compartir.</p>
     </section>
 
-    <section class="section map-section reveal">
-      <p class="eyebrow">Sigue el camino</p>
-      <h2>Cómo llegar</h2>
-      <div class="map-frame">
-        <iframe
-          title="Mapa del evento"
-          src="https://www.google.com/maps?q=Monumento+a+la+Revoluci%C3%B3n+CDMX&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+    <section id="ubicacion" class="section reveal">
+      <div class="section-heading"><p class="kicker">Sigue el camino</p><h2>Cómo llegar</h2><div class="flourish">❦</div></div>
+      <div class="map-frame ornamental-frame soft">
+        <iframe title="Mapa del evento" src="https://www.google.com/maps?q=Monumento+a+la+Revoluci%C3%B3n+CDMX&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Monumento+a+la+Revoluci%C3%B3n+CDMX">Abrir en Google Maps</a>
+      <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Monumento+a+la+Revoluci%C3%B3n+CDMX">⌖ Abrir en Google Maps</a>
     </section>
 
-    <section class="section rsvp-section reveal">
-      <p class="eyebrow">Ayúdanos a preparar todo</p>
-      <h2>Confirma tu asistencia</h2>
-      <p class="body-copy">Puedes confirmar directamente por WhatsApp o llenar el formulario. Si usas Google Forms, las respuestas se guardan automáticamente en Google Sheets.</p>
-      <div class="button-stack">
-        <a id="whatsappBtn" class="btn btn-primary" target="_blank" rel="noopener" href="#">Confirmar por WhatsApp 💬</a>
-        <a class="btn btn-outline" target="_blank" rel="noopener" href="https://forms.google.com/">Registrar asistencia 📝</a>
+    <section class="section reveal">
+      <div class="vintage-card ornamental-frame soft rsvp-card">
+        <div class="section-heading"><p class="kicker">Ayúdanos a preparar todo</p><h2>Confirma tu asistencia</h2><div class="flourish">❦</div></div>
+        <p class="body-copy">Puedes confirmar por WhatsApp o registrar tu respuesta en el formulario. Si conectas Google Forms con Sheets, tu lista de invitados se actualizará automáticamente.</p>
+        <div class="button-stack">
+          <a id="whatsappBtn" class="btn btn-primary" target="_blank" rel="noopener" href="#">Confirmar por WhatsApp</a>
+          <a class="btn btn-outline" target="_blank" rel="noopener" href="https://forms.google.com/">Registrar asistencia</a>
+        </div>
+        <p class="microcopy">Fecha sugerida para confirmar: 5 de noviembre de 2026.</p>
       </div>
-      <p class="microcopy">Fecha sugerida para confirmar: 5 de noviembre de 2026.</p>
     </section>
 
-    <section class="section gifts-section reveal">
-      <p class="eyebrow">Tu presencia es lo más importante</p>
-      <h2>Mesa de regalos</h2>
-      <p class="body-copy">Si deseas llevarle un detallito a Sofía, aquí puedes dejar tus opciones de mesa de regalos.</p>
+    <section class="section reveal">
+      <div class="section-heading"><p class="kicker">Tu presencia es nuestro mejor regalo</p><h2>Mesa de regalos</h2><div class="flourish">❦</div></div>
+      <p class="body-copy">Si deseas llevarle un detallito a Sofía, puedes dejar aquí las opciones que prefieras.</p>
       <div class="gift-grid">
-        <a href="https://www.amazon.com.mx/" target="_blank" rel="noopener">🎁 Amazon</a>
-        <a href="https://www.liverpool.com.mx/" target="_blank" rel="noopener">🎁 Liverpool</a>
-        <a href="#" onclick="alert('Aquí puedes poner otra mesa de regalos o eliminar este botón.'); return false;">🎁 Otra opción</a>
+        <a href="https://www.amazon.com.mx/" target="_blank" rel="noopener"><span>✦</span> Amazon</a>
+        <a href="https://www.liverpool.com.mx/" target="_blank" rel="noopener"><span>✦</span> Liverpool</a>
+        <a href="#" onclick="alert('Aquí puedes poner otra mesa de regalos o eliminar este botón.'); return false;"><span>✦</span> Otra opción</a>
       </div>
     </section>
 
     <section class="section gallery reveal">
-      <p class="eyebrow">Nuestra pequeña vaquerita</p>
-      <h2>Galería</h2>
+      <div class="section-heading"><p class="kicker">Nuestra pequeña vaquerita</p><h2>Momentos bonitos</h2><div class="flourish">❦</div></div>
       <div class="polaroids">
-        <figure><div class="photo-placeholder">Foto 1</div><figcaption>Mi vaquerita 🌸</figcaption></figure>
-        <figure><div class="photo-placeholder">Foto 2</div><figcaption>Yeehaw 🤠</figcaption></figure>
-        <figure><div class="photo-placeholder">Foto 3</div><figcaption>3 añitos ✨</figcaption></figure>
+        <figure><div class="photo-placeholder"><span>Foto 1</span></div><figcaption>Mi vaquerita</figcaption></figure>
+        <figure><div class="photo-placeholder"><span>Foto 2</span></div><figcaption>Yeehaw</figcaption></figure>
+        <figure><div class="photo-placeholder"><span>Foto 3</span></div><figcaption>3 añitos</figcaption></figure>
       </div>
-      <p class="microcopy">Puedes reemplazar estos recuadros por fotos reales en la carpeta <code>assets</code>.</p>
+      <p class="microcopy">Reemplaza estos recuadros por tus fotos dentro de la carpeta <code>assets</code>.</p>
     </section>
 
     <section class="section final-section reveal">
-      <div class="rope-line"></div>
-      <p class="eyebrow">Nos vemos en el rodeo</p>
-      <h2>¡Te esperamos! 🤠🌸</h2>
-      <p>Ensilla tu caballo, ponte tus botas y acompáñanos a celebrar un día muy especial.</p>
-      <div class="big-star">★</div>
+      <div class="final-poster ornamental-frame soft">
+        <div class="badge-star"><span>✦</span></div>
+        <p class="kicker">Nos vemos en el rodeo</p>
+        <h2>¡Te esperamos!</h2>
+        <p>Ensilla tu caballo, ponte tus botas y acompáñanos a celebrar un día muy especial.</p>
+        <div class="flourish">❦</div>
+        <p class="signature">Con cariño, Sofía y familia</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    Hecho con mucho cariño para Sofía ✨
-  </footer>
-
+  <footer>Hecho con mucho cariño ✦</footer>
   <script src="script.js"></script>
 </body>
 </html>
